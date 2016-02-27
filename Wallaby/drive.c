@@ -3,8 +3,10 @@ void enableAllServos() {
 	msleep(500);
 }
 
-void treadRun(float speed, float direction) {
-	
+void treadRun(float speed, float direction, float time) {
+	motor(TREAD_MOTOR, speed*direction*TREAD_FULL_POWER);
+	msleep(time*1000);
+	ao();
 }
 
 void driveForward(float distance, float speed) {

@@ -9,6 +9,7 @@
 #define DrFLR //left motor tuning constant
 
 #define TREAD_MOTOR 
+#define TREAD_FULL_POWER
 #define TREAD_SLOW
 #define TREAD_FAST
 
