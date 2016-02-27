@@ -36,5 +36,8 @@ void arcRight(float radius, float degrees, float speed) {
 }
 
 void squareUp(float speed, float time) {
-	
+	motor(MOTOR_RIGHT, speed*-1*LEFT_FULL_POWER*DrFRC);
+	motor(MOTOR_LEFT, speed*-1*RIGHT_FULL_POWER*DrFLC);
+	msleep(time*1000);
+	ao();
 }
