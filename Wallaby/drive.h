@@ -30,4 +30,7 @@ void arcLeft(float radius, float degrees, float speed);
 void arcRight(float radius, float degrees, float speed);
 void squareUp(float speed, float time);
 
+//void forward_arc(float distance, float speed, float arc);
+//void backward_arc(float distance, float speed, float arc)
+
 void LINK_main();
