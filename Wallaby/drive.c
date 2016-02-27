@@ -30,11 +30,15 @@ void driveBackward(float distance, float speed) {
 }
 
 void arcLeft(float radius, float degrees, float speed) {
-	
+	double dr = (degrees/360)*2*PI*radius*Rt;
+	clear_motor_position(MOTOR_LEFT);
+	clear_motor_position(MOTOR_RIGHT);
 }
 
 void arcRight(float radius, float degrees, float speed) {
-	
+	double dr = (degrees/360)*2*PI*radius*Lt;
+	clear_motor_position(MOTOR_LEFT);
+	clear_motor_position(MOTOR_RIGHT);
 }
 
 void squareUp(float speed, float time) {

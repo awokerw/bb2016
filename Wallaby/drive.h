@@ -1,5 +1,6 @@
 //defining stuff 
 
+#define BOT_DIAMETER
 #define WHELL_DIAMETER 
 #define MOTOR_LEFT
 #define MOTOR_RIGHT
@@ -12,6 +13,9 @@
 #define TREAD_FULL_POWER
 #define TREAD_SLOW
 #define TREAD_FAST
+
+#define Rt
+#define Lt
 
 #define PI 3.1415926
 #define CMTOBEMF (866/(PI*WHEEL_DIAMETER));
