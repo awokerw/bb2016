@@ -1,3 +1,7 @@
+void LINK_main() {
+	
+}
+
 void enableAllServos() {
 	enable_servos();
 	msleep(500);

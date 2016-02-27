@@ -25,3 +25,5 @@ void driveBackward(float distance, float speed);
 void arcLeft(float radius, float degrees, float speed);
 void arcRight(float radius, float degrees, float speed);
 void squareUp(float speed, float time);
+
+void LINK_main();
