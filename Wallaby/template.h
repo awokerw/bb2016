@@ -1,6 +1,5 @@
 //#define CREATE
 #define LINK
-
 #include <stdio.h>
 
 #ifdef CREATE

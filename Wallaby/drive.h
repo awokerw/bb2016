@@ -1,24 +1,26 @@
 //defining stuff 
 
-#define BOT_DIAMETER
-#define WHELL_DIAMETER 
-#define MOTOR_LEFT
-#define MOTOR_RIGHT
-#define LEFT_FULL_POWER
-#define RIGHT_FULL_POWER
-#define DrFLC //right motor tuning constant
-#define DrFLR //left motor tuning constant
+#define gmpc(port) get_motor_position_counter(port)
 
-#define TREAD_MOTOR 
-#define TREAD_FULL_POWER
-#define TREAD_SLOW
-#define TREAD_FAST
+#define WHEEL_DIAMETER 5.715
+#define MOT_LEFT 0
+#define MOT_RIGHT 1
+#define LEFT_FULL_POWER 100
+#define RIGHT_FULL_POWER 100
+#define DrFLC 100/LEFT_FULL_POWER //right motor forward tuning constant
+#define DrFRC 100/RIGHT_FULL_POWER //left motor forward tuning constant
+#define DrBLC 100/LEFT_FULL_POWER
+#define DrBRC 100/RIGHT_FULL_POWER
 
-#define Rt
-#define Lt
+#define TREAD_MOTOR 2
+#define TREAD_FULL_POWER 100
+#define TREAD_SLOW 40
+#define TREAD_FAST 80
+
+#define TC 16.0 //turn constant
 
 #define PI 3.1415926
-#define CMTOBEMF (866/(PI*WHEEL_DIAMETER));
+#define CMTOBEMF (866/(PI*WHEEL_DIAMETER))
 
 //functions
 void enableAllServos();
