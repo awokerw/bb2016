@@ -16,6 +16,13 @@
 #define SLOW 200
 #define VSLOW 50 
 
+#define ARM 0
+#define CLAW 1
+
+#define UP_DOWN_DIST 500
+#define CLAW_CLOSE 0
+#define CLAW_OPEN 1000
+
 //#define get_high_byte2(a) (((a)>>8)&255)
 //#define get_low_byte2(a) ((a)&255)
 void create_mybyte(int byte);
@@ -68,3 +75,8 @@ void create_lineup();
 
 //main
 void create_main();
+
+//arm stuff
+void create_arm_lift(int direction, int speed, int distance);
+void create_claw_close();
+void create_claw_open();

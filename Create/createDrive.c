@@ -304,3 +304,14 @@ void create_lineup(){//lines up the create on a black line
 	}
 	create_stop();
 }
+void create_arm_lift(int direction, int speed, int distance) {
+	motor(ARM, distance*speed); 
+}
+void create_claw_close() {
+	set_servo_position(CLAW, CLAW_CLOSE);
+	msleep(500);
+}
+void create_claw_open() {
+	set_servo_position(CLAW, CLAW_OPEN); 
+	msleep(500);
+}
