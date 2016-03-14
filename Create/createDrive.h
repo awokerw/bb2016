@@ -16,8 +16,13 @@
 #define SLOW 200
 #define VSLOW 50 
 
-#define ARM 0
-#define CLAW 1
+#define WHEEL_DIAMETER 1.75
+#define PI 3.1415926
+#define CMTOBEMF (866/PI*WHEEL_DIAMETER))
+
+#define ARM 8
+#define CLAW 0
+#define TOUCH 9
 
 #define UP_DOWN_DIST 500
 #define CLAW_CLOSE 0
@@ -77,6 +82,7 @@ void create_lineup();
 void create_main();
 
 //arm stuff
-void create_arm_lift(int direction, int speed, int distance);
+void create_arm_lift(int speed, int distance);
+void create_arm_touch_top(int speed);
 void create_claw_close();
 void create_claw_open();

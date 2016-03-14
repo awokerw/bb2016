@@ -304,8 +304,16 @@ void create_lineup(){//lines up the create on a black line
 	}
 	create_stop();
 }
-void create_arm_lift(int direction, int speed, int distance) {
-	motor(ARM, distance*speed); 
+void create_arm_lift(int speed, int distance) {
+  	clear_motor_position_counter(ARM);
+	motor(ARM, speed);
+  	while(digital(TOUCH) == 0 && gmpc(ARM) < (distance*CMTOBEMF) {}
+  	ao();
+}
+void create_arm_touch_top(int speed) {
+	motor(ARM, speed);
+	while (digital(TOUCH) == 0) {}
+	ao();
 }
 void create_claw_close() {
 	set_servo_position(CLAW, CLAW_CLOSE);
