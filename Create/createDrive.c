@@ -5,6 +5,11 @@
 #define get_low_byte2(a) ((a)&255)
 int bytecounter = -1;
 int BYTES[120];
+
+void enable_devices() {
+  enable_servos();
+  create_connect();
+}
 void create_mybyte(int byte)
 {
 	if (bytecounter==-1)

@@ -78,6 +78,8 @@ void create_off();*/
 
 void create_lineup();
 
+void enableDevices();
+
 //main
 void create_main();
 
@@ -86,3 +88,5 @@ void create_arm_lift(int speed, int distance);
 void create_arm_touch_top(int speed);
 void create_claw_close();
 void create_claw_open();
+
+void enable_devices();
